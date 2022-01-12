@@ -1,0 +1,223 @@
+
+# enable/disable the rtp command
+rtp: true
+
+# change the rtp command cool-down (seconds)
+rtp-cooldown: 60
+
+# the random teleport max distance from location x and z coordinate 0
+rtp-max-distance: 1000
+
+
+
+# disables leaves breaking naturally
+disable-natural-leaf-break: true
+
+
+
+# Set the default block for each dimension, this is the block that will spawn
+# in the event that you don't allocate all available probability.
+overworld-default: STONE
+nether-default: NETHERRACK
+end-default: END_STONE
+
+
+# Enable/Disable populating chests with items
+populate-chests: true
+
+# Chance that each item will be added to a chest, works differently from block
+# probabilities in that each chance here is independent e.g. you can set
+# 'COAL: 80' and 'GOLDEN_SWORD: 80' and each has an 80% chance of spawning inside a chest
+chest-items-overworld:
+  COAL: 50
+  GOLDEN_SWORD: 25
+
+
+chest-items-nether:
+  IRON_SHOVEL: 50
+  GOLDEN_SWORD: 75
+
+
+chest-items-end:
+    DRAGON_HEAD: 50
+    DRAGON_EGG: 75
+
+
+# These blocks will spawn on top of grass blocks with the specified percentage.
+# For example, 'OAK_SAPLING: 5' means that there is a 5% chance an oak tree
+# sapling will spawn on top of a grass block.
+grassblock-accessories:
+  OAK_SAPLING: 2
+  SPRUCE_SAPLING: 1.5
+  ACACIA_SAPLING: 1.5
+  DARK_OAK_SAPLING: 1.5
+  BIRCH_SAPLING: 1.5
+  JUNGLE_SAPLING: 1.5
+  DANDELION: 1.5
+  POPPY: 2
+  BLUE_ORCHID: 1.5
+  ALLIUM: 1.5
+  AZURE_BLUET: 1.5
+  RED_TULIP: 1.5
+  ORANGE_TULIP: 1.5
+  WHITE_TULIP: 1.5
+  PINK_TULIP: 1.5
+  OXEYE_DAISY: 1.5
+  CORNFLOWER: 1
+  LILY_OF_THE_VALLEY: 1.5
+  LILAC: 1
+  ROSE_BUSH: 1.5
+  PEONY: 1.5
+  WITHER_ROSE: 1
+  SNOW: 2
+
+
+
+
+# These blocks will spawn on top of farmland blocks with the specified percentage.
+# For example, 'OAK_SAPLING: 5' means that there is a 5% chance an oak tree
+# sapling will spawn on top of a grass block.
+farmland-accessories:
+  CARROTS: 25
+  POTATOES: 25
+  WHEAT: 50
+
+
+sand-accessories:
+  SUGAR_CANE: 50
+  CACTUS: 25
+  KELP_PLANT: 25
+
+
+gravel-accessories:
+  KELP_PLANT: 25
+
+
+sea-pickle-chance: 50
+
+
+amethyst-cluster-chance: 50
+
+# Add or remove blocks here and set the probability out of 100 that they will spawn.
+# For example, 'COPPER_ORE: 0.25' means that there is a 0.25% chance that a block will spawn
+# as copper ore. Total probability allocated should not exceed 100!
+overworld:
+
+  # ores
+  COPPER_ORE: 0.25
+  COAL_ORE: 0.5
+  IRON_ORE: 0.25
+  GOLD_ORE: 0.15
+  DIAMOND_ORE: 0.05
+  EMERALD_ORE: 0.05
+  LAPIS_ORE: 0.15
+  REDSTONE_ORE: 0.15
+  DEEPSLATE_COPPER_ORE: 0.25
+  DEEPSLATE_COAL_ORE: 0.5
+  DEEPSLATE_IRON_ORE: 0.25
+  DEEPSLATE_GOLD_ORE: 0.15
+  DEEPSLATE_DIAMOND_ORE: 0.05
+  DEEPSLATE_EMERALD_ORE: 0.05
+  DEEPSLATE_LAPIS_ORE: 0.15
+  DEEPSLATE_REDSTONE_ORE: 0.15
+
+  # common blocks
+  GRASS_BLOCK: 28
+  COBBLESTONE: 5
+  STONE: 10
+  DIRT: 5
+  SAND: 3
+  RED_SAND: 1
+  GRANITE: 2
+  DIORITE: 2
+  ANDESITE: 2
+  DEEPSLATE: 1
+  AMETHYST_BLOCK: 0.1
+  FARMLAND: 1
+  CLAY: 3
+  TERRACOTTA: .5
+  WATER: 1
+  LAVA: 1
+  TUBE_CORAL_BLOCK: 2
+  SPAWNER: 2
+  BEE_NEST: 2
+  BUDDING_AMETHYST: 2
+
+  # wood and leaves
+  OAK_LEAVES: 0.5
+  OAK_LOG: 1
+  OAK_PLANKS: 1
+  DARK_OAK_LEAVES: 0.25
+  DARK_OAK_LOG: 0.25
+  ACACIA_LEAVES: 0.25
+  ACACIA_LOG: 0.25
+  BIRCH_LEAVES: 0.5
+  BIRCH_LOG: 0.25
+  BIRCH_PLANKS: 1
+  SPRUCE_LEAVES: 0.25
+  SPRUCE_LOG: 1
+  SPRUCE_PLANKS: 1
+
+  # natural structure blocks
+  STONE_BRICKS: 0.5
+  CRAFTING_TABLE: 0.1
+  CHEST: 0.1
+
+
+
+nether:
+  NETHERRACK: 22
+  BASALT: 12
+  BLACKSTONE: 12
+  GLOWSTONE: 0.25
+  NETHER_BRICKS: 2
+  NETHER_GOLD_ORE: 0.5
+  SOUL_SAND: 15
+  BONE_BLOCK: 5
+  CRIMSON_NYLIUM: 5
+  WARPED_NYLIUM: 5
+  SHROOMLIGHT: 0.25
+  MAGMA_BLOCK: 2.5
+  GRAVEL: 3
+  NETHER_QUARTZ_ORE: 0.5
+  LAVA: 3
+  CRIMSON_STEM: 2
+  NETHER_WART_BLOCK: 2
+  WARPED_STEM: 2
+  WARPED_WART_BLOCK: 2
+  GILDED_BLACKSTONE: 1
+  SPAWNER: 1
+  CHEST: 0.1
+
+
+
+# This designates which mob spawners generate in the nether and how frequenetly.
+# EX: GHAST: 25 is a 25% chance that a spawner will be a ghast spawner. Don't allocate more then 100%.
+overworld-mob-spawners:
+  PIG: 25
+  ZOMBIE: 25
+  COW: 25
+  SKELETON: 25
+
+
+nether-mob-spawners:
+  GHAST: 25
+  BLAZE: 25
+  MAGMA_CUBE: 25
+  ZOMBIFIED_PIGLIN: 25
+
+
+end-mob-spawners:
+  ENDERMAN: 50
+  ENDERMITE: 50
+
+
+
+end:
+  END_STONE: 45.5
+  OBSIDIAN: 47.5
+  SPAWNER: 2
+  DRAGON_EGG: 4.5
+  CHEST: 0.5
+
+

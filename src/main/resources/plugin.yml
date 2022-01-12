@@ -1,0 +1,8 @@
+name: Skygrid
+main: com.voidjns.skygrid.Skygrid
+version: 1.0
+api-version: 1.13
+load: STARTUP
+commands:
+  skygrid:
+  rtp:
