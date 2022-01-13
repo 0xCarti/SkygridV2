@@ -58,12 +58,6 @@ public class OverworldPopulator extends BlockPopulator {
                 CreatureSpawner spawner = (CreatureSpawner) blockState;
                 spawner.setSpawnedType(spawnerTypes.get(random.nextInt(spawnerTypes.size())));
                 spawner.update(true, false);
-            } else if (blockState.getType() == Material.BEE_NEST) {
-                ((Beehive) blockState).setMaxEntities(5);
-                limitedRegion.spawn(blockState.getLocation(),
-                        EntityType.BEE.getEntityClass(),
-                        entity -> ((Beehive) blockState).addEntity((Bee) entity));
-                blockState.update(false, false);
             }
         }
     }
@@ -76,12 +70,6 @@ public class OverworldPopulator extends BlockPopulator {
                 CreatureSpawner spawner = (CreatureSpawner) blockState;
                 spawner.setSpawnedType(spawnerTypes.get(random.nextInt(spawnerTypes.size())));
                 spawner.update(true, false);
-            }else if(blockState.getType() == Material.BEE_NEST){
-                ((Beehive) blockState).setMaxEntities(5);
-                source.getWorld().spawn(blockState.getLocation(),
-                        EntityType.BEE.getEntityClass(),
-                        entity -> ((Beehive) blockState).addEntity((Bee) entity));
-                blockState.update(false, false);
             }
         }
     }
